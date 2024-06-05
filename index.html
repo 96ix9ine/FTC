@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Technologies Complany / FTC</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/states.css">
+    <link rel="stylesheet" href="/styles/pluses.css">
+    <link rel="stylesheet" href="/styles/advantages.css">
+    <link rel="stylesheet" href="/styles/statistics.css">
+    <link rel="stylesheet" href="/styles/technologies.css">
+    <link rel="stylesheet" href="/styles/AI.css">
+    <link rel="stylesheet" href="/styles/statesSlim.css">
+    <link rel="stylesheet" href="/styles/FAQ.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <script src="/scripts/accordion.js" defer></script>
+    <script src="/scripts/technologies.js" defer></script>
+    <link rel="stylesheet" href="/styles/modalreg.css">
+    <script src="/scripts/modal.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Подключение библиотеки Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <button class="start-button">
+            <a href="#statistics" class="start-button_link link">
+                <span class="start-button_text">Начать <br> зарабатывать</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="white" class="start-button_svg bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+            </a>
+        </button>
+        <div class="start-div__container">
+            <nav class="nav__container">
+                <ul class="nav__container_list">
+                    <li class="nav__container_list-item"><a href="#states" class="nav__container_list-item_link link">О компании</a></li>
+                    <li class="nav__container_list-item"><a href="#pluses" class="nav__container_list-item_link link">Инвестору</a></li>
+                    <li class="nav__container_list-item"><a href="#advantages" class="nav__container_list-item_link link">Новости</a></li>
+                    <li class="nav__container_list-item"><a href="#statistics" class="nav__container_list-item_link link">Отзывы</a></li>
+                    <li class="nav__container_list-item"><a href="#FAQ" class="nav__container_list-item_link link">F.A.Q</a></li>
+                    <li class="nav__container_list-item"><a href="#footer" class="nav__container_list-item_link link">Контакты</a></li>
+                </ul>
+                <button class="nav__container_button-reg button-reg">
+                    <a href="#" class="link"><span class="button-reg_text span">Вход/Регистрация</span></a>
+                </button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h2>Регистрация</h2>
+                        <span class="close">&times;</span>
+                      </div>
+                      <div class="modal-body">
+                        <form class="form" action="/submit_registration" method="POST">
+                          <label for="username">Имя пользователя:</label><br>
+                          <input type="text" id="username" name="username" required><br>
+                          <label for="email">Email:</label><br>
+                          <input type="email" id="email" name="email" required><br>
+                          <label for="password">Пароль:</label><br>
+                          <input type="password" id="password" name="password" required><br><br>
+                          <input class="modal-body_button font" type="submit" value="Зарегистрироваться">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+            </nav>
+            <div class="start-info__container">
+                <div class="start-info__container_div start-info">
+                    <p class="start-info_text--bold">
+                        Сегодня рынок <br> IT-технологий измеряется <br> уже триллионами долларов
+                    </p>
+                    <p class="start-info_text--regular">
+                        Мы знаем как заработать свою долю прибыли.<br>
+                        Регестрируйтесь на нашей платформе и начинайте <br> зарабатывать с нами
+                    </p>
+                    <button class="start-info__container_button-calc button-calc">
+                        <a href="#" class="link"><span class="button-calc_text span">Калькулятор прибыли</span></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="states" id="states">
+            <div class="states__container">
+                <div class="states__container-PI">
+                    <div class="states__container_pictures">
+                        <div class="picture-1 picture">
+                            <span class="picture-1_text font">Как мы <br> Работаем</span>
+                        </div>
+                        <div class="picture-2 picture">
+                        </div>
+                        <div class="picture-3 picture">
+                        </div>
+                    </div>
+                    <div class="states__container_info">
+                        <p class="states__container_info-text--bold font">Как мы работаем <br>и на чем зарабатываем</p>
+                        <p class="states__container_info-text--regular font">Команда, у которой за плечами не менее 12 лет работы на разных <br> позициях в сегменте инвестиционного бизнеса – от аудитора и <br> аналитика отдела рисков до финансового директора <br> инвестиционного банка. Формируя динамичный инвестиционный <br> портфель, мы ежедневно применяем накопленный опыт в разных <br> направлениях, и делаем упор на стартапы в сферах:</p>
+                        <button class="states__container_info-button button">
+                            <a href="#" class="states__container_info-button_link link"><span class="info-button_text font span">Регистрация</span></a>
+                        </button>
+                    </div>
+                </div>
+                <div class="states__container_cards">
+                    <div class="states__container_cards-item item">
+                        <div class="cards-item_general">
+                                <img class="cards-item_general--img" src="/img/card-line-svg.svg" alt="рост вверх">
+                                <div class="cards-item_general--line"></div>
+                                <p class="cards-item_general--title font">Блокчейн <br> и криптовалюта</p>
+                        </div>
+                        <div class="cards-item_text-container">
+                            <p class="cards-item_text-container--info font">Сегодня IT-проекты в этой сфере в <br> центре внимания инвесторов всего <br> мира. Но эти технологии интересуют нас <br> не только сами по себе, мы <br> рассматриваем перспективы их <br> внедрение в e-commerce и в развитие <br> маркетплейсов.</p>
+                        </div>
+                    </div>
+                    <div class="states__container_cards-item item">
+                        <div class="cards-item_general">
+                                <img class="cards-item_general--img" src="/img/card-line-svg.svg" alt="рост вверх">
+                                <div class="cards-item_general--line"></div>
+                                <p class="cards-item_general--title font">Исскуственный интелект <br> в сфере беттинга</p>
+                        </div>
+                        <div class="cards-item_text-container">
+                            <p class="cards-item_text-container--info font">Запатентованный инфопродукт <br> собственного производства на основе <br> искусственного интеллекта служит <br> инструментом получения стабильного <br> дохода в сфере беттинга.</p>
+                        </div>
+                    </div>
+                    <div class="states__container_cards-item item">
+                        <div class="cards-item_general">
+                                <img class="cards-item_general--img" src="/img/card-line-svg.svg" alt="рост вверх">
+                                <div class="cards-item_general--line"></div>
+                                <p class="cards-item_general--title font">Блокчейн <br> и криптовалюта</p>
+                        </div>
+                        <div class="cards-item_text-container">
+                            <p class="cards-item_text-container--info font">Некоторые инвесторы уже <br> разуверились в этих сферах, но <br> технология виртуальной реальности <br> «воскресила» эти отрасли и превратила <br> «Old School» в «New Sexy».</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pluses" id="pluses">
+            <div class="pluses__container">
+                <div class="pluses__container_image-block"></div>
+                <div class="pluses__container_info">
+                    <div class="info__container-block">
+                        <p class="info__container-block_text font">Инвестировать <br> с нами надежно <br> и выгодно</p>
+                        <div class="info__container-block--line"></div>
+                        <button class="info__container-block_button button">
+                            <a href="#" class="link"><span class="info__container-block_button-text font span">Начать зарабатывать</span></a>
+                        </button>
+                    </div>
+                    <div class="info__container-list">
+                        <div class="info__container-list_text">
+                            <div class="info__container-list_text--circle">
+                                <span class="info__container-list_text--circle_number">1</span>
+                            </div> 
+                            <p class="info__container-list_text--bold font">Регистрация на сайте</p>
+                            <p class="info__container-list_text--regular font">Пройдите процедуру регистрации на сайте для <br> открытия счета. Нажмите кнопку «Регистрация» <br> и заполните все необходимые поля</p>
+                        </div>
+                        <div class="info__container-list_text">
+                            <div class="info__container-list_text--circle circle circle-blue">
+                                <span class="info__container-list_text--circle_number circle-blue_number">2</span>
+                            </div> 
+                            <p class="info__container-list_text--bold font">Открывайте депозит</p>
+                            <p class="info__container-list_text--regular font">Сделайте инвестицию на удобный срок на <br> сумму от 100 рублей и ваши деньги начнут <br> работать на вас</p>
+                        </div>
+                        <div class="info__container-list_text">
+                            <div class="info__container-list_text--circle">
+                                <span class="info__container-list_text--circle_number">3</span>
+                            </div> 
+                            <p class="info__container-list_text--bold font">Распоряжайтесь прибылью</p>
+                            <p class="info__container-list_text--regular font">По факту окончания периода инвестиции вклад <br> с прибылью будут доступы для вывода или <br> создания нового депозита</p>
+                        </div>
+                        <div class="info__container-list_dashedline"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages" id="advantages">
+            <div class="advantages__container">
+                <div class="advantages__container-title">
+                    <p class="advantages__container-title_text font">Почему именно мы?</p>
+                    <div class="advantages__container-title--line"></div>
+                    <p class="advantages__container-title--bold font">Преимущества работы с нами</p>
+                </div>
+                <div class="advantages__container-list">
+                    <div class="advantages__container-list-block">
+                        <div class="advantages__contaier-list_item">
+                            <div class="advantages__container-list_item--svg advantages-svg-1 img"></div>
+                            <p class="advantages__container-list_item-text--bold font">Стабильный доход – 1.2% в день</p>
+                            <div class="advantages__container-list_item--line"></div>
+                            <p class="advantages__container-list_item-text--regular font">Возможность получения стабильной доходности, <br> превышающей процентную ставку по банковским <br> депозитам</p>
+                        </div>
+                        <div class="advantages__contaier-list_item">
+                            <div class="advantages__container-list_item--svg advantages-svg-2 img"></div>
+                            <p class="advantages__container-list_item-text--bold font">Быстрый вывод средств</p>
+                            <div class="advantages__container-list_item--line"></div>
+                            <p class="advantages__container-list_item-text--regular font">Мы знаем как важно иметь доступ к своим личным <br> средствам, поэтому автоматизировали процесс вывода <br> дивидендов до 24-х часов</p>
+                        </div>
+                    </div>
+                    <div class="advantages__container-list-block">
+                        <div class="advantages__contaier-list_item">
+                            <div class="advantages__container-list_item--svg advantages-svg-3 img"></div>
+                            <p class="advantages__container-list_item-text--bold font">Устойчивость «Open Invest System»</p>
+                            <div class="advantages__container-list_item--line"></div>
+                            <p class="advantages__container-list_item-text--regular font">Эффективность инвестиционных стратегий и защита ваших <br> денежных средств подтверждается многолетним опытом <br> работы профессиональной команды инвесторов</p>
+                        </div>
+                        <div class="advantages__contaier-list_item">
+                            <div class="advantages__container-list_item--svg advantages-svg-4 img"></div>
+                            <p class="advantages__container-list_item-text--bold font">Минимальная инвестиция - 100р.</p>
+                            <div class="advantages__container-list_item--line"></div>
+                            <p class="advantages__container-list_item-text--regular font">Вы сами определяете свои инвестиционные цели. Начните <br> с небольшой суммы, основные депозитные предложения <br> доступны от 100 руб.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages__container-buttons">
+                    <button class="advantages__container-buttonts_button button">
+                        <a href="#" class="advantages__container-buttons_button-link link"><span class="advantages__container-buttons_button--text font span">Регистрация</span></a>
+                    </button>
+                    <button class="advantages__container-buttonts_button-2 button">
+                        <a href="#" class="advantages__container-buttons_button-link link"><span class="advantages__container-buttons_button--text-2 font span">Калькулятор прибыли</span></a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="statistics" id="statistics">
+            <div class="statistics__container img">
+                <div class="statistics__container_title">
+                    <h2 class="statistics__container_title-h2 font">Статистика компании</h2>
+                    <div class="statistics__container_title--line"></div>
+                </div>
+                <div class="statistics__container_info">
+                    <div class="statistics__container_info-numbers">
+                        <p class="statistics__container_info-numbers_text--bold font">932</p>
+                        <div class="statistics__container_info-numbers--line"></div>
+                        <p class="statistics__container_info-numbers_text--regular font">Работаем (дней)</p>
+                    </div>
+                    <div class="statistics__container_info-numbers">
+                        <p class="statistics__container_info-numbers_text--bold font">960696</p>
+                        <div class="statistics__container_info-numbers--line"></div>
+                        <p class="statistics__container_info-numbers_text--regular font">Всего инвесторов</p>
+                    </div>
+                    <div class="statistics__container_info-numbers">
+                        <p class="statistics__container_info-numbers_text--bold font">67</p>
+                        <div class="statistics__container_info-numbers--line"></div>
+                        <p class="statistics__container_info-numbers_text--regular font">Новых за 24 часа</p>
+                    </div>
+                    <div class="statistics__container_info-numbers">
+                        <p class="statistics__container_info-numbers_text--bold font">109500р.</p>
+                        <div class="statistics__container_info-numbers--line"></div>
+                        <p class="statistics__container_info-numbers_text--regular font">Среднее пополнение</p>
+                    </div>
+                </div>
+                <div class="statistics__container_buttons">
+                    <button class="statistics__container_buttons-button button">
+                        <a href="#" class="link"><span class="statistics__container_buttons-button--text span">Присоединиться к нам</span></a>
+                    </button>
+                    <button class="statistics__container_buttons-button-2 button">
+                        <a href="#" class="link"><span class="statistics__container_buttons-button--text span">Калькулятор прибыли</span></a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="technologies" id="technologies"> 
+            <div class="technologies__container">
+                <div class="technologies__container_title">
+                    <p class="technologies__container_title-text--regular font">На чем мы больше всего зарабатываем</p>
+                    <div class="technologies__container_title--line"></div>
+                    <h2 class="technologies__container_title-text--bold font">Стартапы и технологии</h2>
+                </div>
+                <div class="technologies__container_startups">
+                    <div class="technologies__container_startups-card">
+                        <span class="technologies__container_startups-background">
+                            <img class="technologies__container_startups-card_img" src="/img/card-line-svg.svg" alt="">
+                            <p class="technologies__container_startups-card_text--regular font">Стартапы из сферы:</p>
+                            <p class="technologies__container_startups-card_text--bold font">Криптовалюты</p>
+                        </span>
+                    </div>
+                    <div class="technologies__container_startups-card">
+                        <span class="technologies__container_startups-background">
+                            <img class="technologies__container_startups-card_img" src="/img/card-line-svg.svg" alt="">
+                            <p class="technologies__container_startups-card_text--regular font">Технология из сферы:</p>
+                            <p class="technologies__container_startups-card_text--bold font">ИИ в сфере беттинга</p>
+                        </span>
+                    </div>
+                    <div class="technologies__container_startups-card">
+                        <span class="technologies__container_startups-background">
+                            <img class="technologies__container_startups-card_img" src="/img/card-line-svg.svg" alt="">
+                            <p class="technologies__container_startups-card_text--regular font">Стартапы из сферы:</p>
+                            <p class="technologies__container_startups-card_text--bold font">Блокчейн и ICO</p>
+                        </span>
+                    </div>
+                    <div class="technologies__container_startups-card">
+                        <span class="technologies__container_startups-background">
+                            <img class="technologies__container_startups-card_img" src="/img/card-line-svg.svg" alt="">
+                            <p class="technologies__container_startups-card_text--regular font">Стартапы из сферы:</p>
+                            <p class="technologies__container_startups-card_text--bold font">VR-технологии</p>
+                        </span>
+                    </div>
+                    <div class="technologies__container_startups-card">
+                        <span class="technologies__container_startups-background">
+                            <img class="technologies__container_startups-card_img" src="/img/card-line-svg.svg" alt="">
+                            <p class="technologies__container_startups-card_text--regular font">Стартапы из сферы:</p>
+                            <p class="technologies__container_startups-card_text--bold font">Внедрение сетей 5G</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="AI" id="AI">
+            <div class="AI__container">
+                <div class="AI__container_imgs">
+                    <div class="AI__container_imgs-img-1 picture">
+                        <span class="AI__container_imgs-img-1--text font">Технология из сферы</span>
+                    </div>
+                    <div class="AI__container_imgs-img-2 img picture"></div>
+                    <div class="AI__container_imgs-img-3 img picture"></div>
+                </div>
+                <div class="AI__container_info">
+                    <p class="AI__container_info-text--bold font">Технология из сферы:</p>
+                    <h2 class="AI__container_info-h2 font">Исскуственный инетелект <br> в сфере беттинга</h2>
+                    <p class="AI__container_info-text--regular font">Запатентованный инфопродукт собственного производства на основе <br> искусственного интеллекта служит нам подспорьем, гарантируя стабильный, <br> практически пассивный доход в сфере беттинга.</p>
+                    <p class="AI__container_info-text--bold font">Как это работает?</p>
+                    <p class="AI__container_info-text--regular font">Искусственный интеллект на основе нейросети, постоянно обучаясь, в <br> реальном времени анализирует коэффициенты и иные переменные в <br> зарубежных букмекерских конторах, дополняя анализ статистическими <br> данными игры, и выносит прогноз, крайне редко ошибаясь. <a href="#" class="AI__container_info-link">Читать далее</a></p>
+                    <button class="AI__container_info-button button">
+                        <a href="#" class="link"><span class="AI__container_info-button--text font">Начните зарабатывать прямо сейчас</span></a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="states-slim" id="states-slim">
+            <div class="states-slim__container">
+                <div class="states-slim__container_imgs">
+                    <div class="states-slim__container_imgs-img-1 picture">
+                        <span class="states-slim__container_imgs-img-1--text font">Как мы работаем</span>
+                    </div>
+                    <div class="states-slim__container_imgs-img-2 img picture"></div>
+                    <div class="states-slim__container_imgs-img-3 img picture"></div>
+                </div>
+                <div class="states-slim__container_info">
+                    <h2 class="states-slim__container_info-h2 font">Как мы зарабатываем?</h2>
+                    <div class="states-slim__container_info--line"></div>
+                    <p class="states-slim__container_info-text--regular font">В основе нашей бизнес-модели лежит принцип 3-х уровневой диверсификации – ресурсов, инвестиций и рисков</p>
+                    <p class="states-slim__container_info-text--regular font">Что это значит? Если мы инвестируем в один из нишевых проектов, то обязательно подбираем смежные проекты в этой же нише – менее рискованные и более короткие с точки зрения получения прибыли.</p>
+                    <p class="states-slim__container_info-text--regular font">При таком подходе к инвестированию мы параллельно наращиваем прибыль и дивиденды с уже существующих вложений в другие проекты, чтобы иметь финансовый баланс и гарантировать выплаты дивидендов нашим инвесторам в сроки.<a href="#" class="states-slim__container_info-link">Читать далее</a></p>
+                    <button class="states-slim__container_info-button button">
+                        <a href="#" class="link"><span class="states-slim__container_info-button--text font">Регистрация</span></a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="FAQ" id="FAQ">
+            <div class="FAQ__container">
+                <div class="FAQ__container_title">
+                    <h2 class="FAQ__container_title-h2 font">Часто задаваемые вопросы</h2>
+                    <div class="FAQ__container-title--line"></div>
+                </div>
+                <div class="FAQ__container-general">
+                    <div class="FAQ__container-general_info">
+                        <div class="FAQ__container-general_info-accordion">
+                            <button class="FAQ__container-general_info-accordion_button">
+                                <div class="FAQ__container_general_info-accordion_button-div"><img class="FAQ__container-general_info-accordion--svg" src="/img/FAQ-img-vopros.svg" alt=""></div>
+                                <p class="FAQ__container-general_info-accordion--text font">Что нужно, чтобы начать работу с features technologies <br> company (ftc)?</p>
+                                <div class="FAQ__container_general_info-accordion_button-div"><img class="FAQ__container-general_info-accordion--svg-2" src="/img/FAQ-img-accordion.svg" alt=""></div>
+                            </button>
+                            <div class="FAQ__container_general_info-accordion_content">
+                                <p class="FAQ__container_general_info-accordion_content-text font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sapiente saepe, illo excepturi accusantium sed sint quisquam ducimus numquam! Velit.</p>
+                            </div>
+                        </div>
+                        <div class="FAQ__container-general_info-accordion accordion-2">
+                            <button class="FAQ__container-general_info-accordion_button">
+                                <div class="FAQ__container_general_info-accordion_button-div"><img class="FAQ__container-general_info-accordion--svg" src="/img/FAQ-img-vopros.svg" alt=""></div>
+                                <p class="FAQ__container-general_info-accordion--text font">Могу ли я не заработать, инвестируя с features <br> technologies company (ftc)?</p>
+                                <div class="FAQ__container_general_info-accordion_button-div"><img class="FAQ__container-general_info-accordion--svg-2" src="/img/FAQ-img-accordion.svg" alt=""></div>
+                            </button>
+                            <div class="FAQ__container_general_info-accordion_content">
+                                <p class="FAQ__container_general_info-accordion_content-text font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sapiente saepe, illo excepturi accusantium sed sint quisquam ducimus numquam! Velit.</p>
+                            </div>
+                        </div>
+                        <div class="FAQ__container-general_info-accordion">
+                            <button class="FAQ__container-general_info-accordion_button">
+                                <div class="FAQ__container_general_info-accordion_button-div"><img class="FAQ__container-general_info-accordion--svg" src="/img/FAQ-img-vopros.svg" alt=""></div>
+                                <p class="FAQ__container-general_info-accordion--text font">Какая минимальная и максимальная сумма <br> депозита?</p>
+                                <div class="FAQ__container_general_info-accordion_button-div"><img class="FAQ__container-general_info-accordion--svg-2" src="/img/FAQ-img-accordion.svg" alt=""></div>
+                            </button>
+                            <div class="FAQ__container_general_info-accordion_content">
+                                <p class="FAQ__container_general_info-accordion_content-text font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sapiente saepe, illo excepturi accusantium sed sint quisquam ducimus numquam! Velit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="FAQ__container-general_text">
+                        <p class="FAQ__container-general_text--bold font">Какая минимальная <br> и максимальная сумма <br> депозита?</p>
+                        <div class="FAQ__container-general_text--line"></div>
+                        <p class="FAQ__container-general_text--regular font">Минимальный размер депозита – 100 рублей.</p>
+                        <p class="FAQ__container-general_text--regular font">Максимальный размер депозита – 80 000 000 рублей.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>  
+    
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+            <div class="footer__container_block">
+                <p class="footer__container_block-text font">Команда, у которой за плечами <br>
+                    не менее 12 лет работы <br>
+                    на разных позициях в сегменте <br> инвестиционного бизнеса – <br> 
+                    от аудитора и аналитика отдела <br> рисков до финансового директора <br> инвестиционного банка.</p>
+            </div>
+            <div class="footer__container_nav">
+                <div class="footer__container_nav-title">
+                    <h2 class="footer__container_nav-h2 font">Навигация</h2>
+                    <div class="footer__container_nav--line"></div>
+                </div>
+                <div class="footer__container_nav-general-div">
+                    <div class="footer__container_nav-general-div_block1 block">
+                        <ul class="footer__container_nav-general-div-list">
+                            <li class="footer__container_nav-general-div-list_item font"><a href="#header" class="footer__container_nav-general-div-list_item--link link">Главная</a></li>
+                            <li class="footer__container_nav-general-div-list_item font"><a href="#states" class="footer__container_nav-general-div-list_item--link link">О компании</a></li>
+                            <li class="footer__container_nav-general-div-list_item font"><a href="#statistics" class="footer__container_nav-general-div-list_item--link link">Отзывы о <br> компании</a></li>
+                            <li class="footer__container_nav-general-div-list_item font"><a href="#states-slim" class="footer__container_nav-general-div-list_item--link link">Как мы <br> зарабатываем?</a></li>
+                            <li class="footer__container_nav-general-div-list_item font"><a href="#" class="footer__container_nav-general-div-list_item--link link"> Клиентское <br> соглашение</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__container_nav-general-div_block2 block">
+                        <ul class="footer__container_nav-general-div-list">
+                            <li class="footer__container_nav-general-div-list_item font"><a href="#" class="footer__container_nav-general-div-list_item--link link">Документы <br> компании</a></li>
+                            <li class="footer__container_nav-general-div-list_item font"><a href="#advantages" class="footer__container_nav-general-div-list_item--link link">Новости</a></li>
+                            <li class="footer__container_nav-general-div-list_item font"><a href="#FAQ" class="footer__container_nav-general-div-list_item--link link">F.A.Q</a></li>
+                            <li class="footer__container_nav-general-div-list_item font"><a href="#footer" class="footer__container_nav-general-div-list_item--link link">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__container_info">
+                <div class="footer__container_info-title">
+                    <h2 class="footer__container_info-h2 font">Контакты</h2>
+                    <div class="footer__container_info--line"></div>
+                </div>
+                <p class="footer__container_info-text--regular phone font">+7 (499)-229-33-33</p>
+                <p class="footer__container_info-text--regular font">info@ftc.vin</p>
+                <p class="footer__container_info-text--regular font">ПН - ПТ: 10:00 - 20:00 по МСК</p>
+                <p class="footer__container_info-text--regular font">СБ - ВС: свободный график</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+         anime({
+            targets: ".modal-content",
+            background: [
+            'linear-gradient(105deg, rgba(85,134,198,1) 0%, rgba(49,59,85,1) 20%, rgba(60,113,167,1) 45%, rgba(60,105,150,1) 55%, rgba(49,59,85,1) 80%, rgba(109,120,133,1) 100%)',
+            'linear-gradient(-105deg, rgba(85,134,198,1) 0%, rgba(49,59,85,1) 20%, rgba(60,113,167,1) 45%, rgba(60,105,150,1) 55%, rgba(49,59,85,1) 80%, rgba(109,120,133,1) 100%)'
+            ],
+            direction: 'alternate',
+            loop: true,
+            easing: 'easeInOutSine',
+            duration: 6800,
+        });
+    </script>
+</body>
+
+</html>

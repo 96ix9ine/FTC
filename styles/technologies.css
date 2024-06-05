@@ -1,0 +1,99 @@
+.technologies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 860px;
+}
+
+.technologies__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1480px;
+    height: 566px;
+}
+
+.technologies__container_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.technologies__container_title-text--regular {
+    font-size: 18px;
+    font-weight: bold;
+    color: #133F8D;
+}
+.technologies__container_title--line {
+    width: 65px;
+    height: 3px;
+    margin: 2% 0 2% 0;
+    background-color: #133F8D;
+}
+.technologies__container_title-text--bold {
+    font-size: 42px;
+    font-weight: bold;
+    color: black;
+}
+
+.technologies__container_startups {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 6px 6px 10px 0px rgba(66, 68, 90, 0.5);
+}
+.technologies__container_startups-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.850);
+    transition: 0.2s ease-in-out;
+}
+.technologies__container_startups-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 310px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.technologies__container_startups-card:nth-child(2) .technologies__container_startups-background {  
+    background-color: transparent;
+}
+.technologies__container_startups-card:hover .technologies__container_startups-background,
+.technologies__container_startups-card:focus .technologies__container_startups-background
+.technologies__container_startups-card:active .technologies__container_startups-background {
+    transform: scale(1.1);
+    background-color: white;
+    box-shadow: 6px 6px 60px 0px rgba(66, 68, 90, 0.5);
+    transition: 0.5s ease-in-out;
+}
+.technologies__container_startups-card_img {
+    z-index: -1;
+}
+.technologies__container_startups-card_text--regular {
+    margin: 2% 0 2% 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #194DD2;
+    z-index: -1;
+}
+.technologies__container_startups-card_text--bold {
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+    z-index: -1;
+}

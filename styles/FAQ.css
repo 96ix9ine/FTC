@@ -1,0 +1,151 @@
+.FAQ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 739px;
+}
+
+.FAQ__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1480px;
+    height: 600px;
+}
+
+.FAQ__container_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50%;
+}
+.FAQ__container_title-h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: black;
+}
+.FAQ__container-title--line {
+    width: 65px;
+    height: 3px;
+    margin-top: 2%;
+    background-color: #0A51CB;
+}
+
+.FAQ__container-general {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.FAQ__container-general_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.FAQ__container-general_info-accordion {
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 4px 40px -5px rgba(66, 68, 90, 0.3);
+    transition: 0.5s ease-in-out;
+}
+.accordion-2 {
+    margin: 2% 0 2% 0;
+}
+.FAQ__container-general_info-accordion_button {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    grid-template-columns: 66px 609px 57px;
+    transition: 0.5s ease-in-out;
+}
+.FAQ__container_general_info-accordion_button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.FAQ__container_general_info-accordion_content {
+    display: none;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #c9c9c9;
+    transition: 0.5s ease-in-out;
+}
+.FAQ__container_general_info-accordion_content.show {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    height: 100%;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+.FAQ__container_general_info-accordion_content-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+.FAQ__container-general_info-accordion--svg {
+    grid-area: 1 / 1;
+}
+.FAQ__container-general_info-accordion--svg-2 {
+    grid-area: 1 / 3;
+}
+.FAQ__container-general_info-accordion--text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: black;
+    text-align: start;
+    grid-area: 1 / 2;
+}
+
+.FAQ__container-general_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-left: 1%;
+    background-color: #0A51CB;
+}
+.FAQ__container-general_text--bold {
+    margin: 0 0 3% 5%;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+.FAQ__container-general_text--line {
+    width: 65px;
+    height: 3px;
+    margin: 0 0 3% 5%;
+    background-color: white;
+}
+.FAQ__container-general_text--regular {
+    margin: 2% 0 0 5%;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
