@@ -84,3 +84,9 @@ body.modal-open {
 .button-reg {
     transition-duration: 0.4s;
 }
+
+@media (max-width: 1300px) {
+    .close {
+        font-size: 28px !important;
+    }
+}

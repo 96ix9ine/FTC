@@ -149,3 +149,32 @@
     color: white;
     letter-spacing: 1px;
 }
+
+@media (max-width: 1600px) {
+    .FAQ__container-general_text {
+        width: auto;
+    }
+    .FAQ__container-general_info {
+        width: auto;
+    }
+}
+@media (max-width: 1400px) {
+    .FAQ__container-general_text {
+        display: none;
+    }
+    .FAQ__container-general_info-accordion {
+        width: min-content;
+    }
+    .FAQ__container-general_info-accordion_button {
+        width: fit-content;
+    }
+    .FAQ__container_general_info-accordion_content {
+        width: fit-content;
+    }
+    .FAQ__container-general_text--bold {
+        font-size: 28px;
+    }
+    .FAQ__container-general_text--regular {
+        font-size: 16px;
+    }
+}

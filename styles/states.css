@@ -155,3 +155,119 @@
     line-height: 26px;
     color: black;
 }
+
+@media (max-width: 1600px) {
+    .states__container-PI {
+        width: 100%;
+    }
+    .states__container_pictures {
+        grid-template-columns: none;
+        grid-template-rows: none;
+    }
+    .picture-1,
+    .picture-2 {
+        width: 280px;
+        height: 300px;
+    }
+    .picture-3 {
+        width: 600px;
+    }
+    .states__container_info-text--regular {
+        margin: 0 0 5% 15%;
+        width: 100%;
+    }
+    .states__container_cards-item {
+        width: 350px;
+    }
+    .cards-item_text-container--info {
+        width: auto;
+        font-size: 16px;
+    }
+}
+@media (max-width: 1400px) {
+    .states__container-PI {
+        justify-content: space-evenly;
+    }
+    .states__container_pictures {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .states__container_info-text--regular {
+        width: auto;
+    }
+    .picture-1,
+    .picture-2 {
+        width: 220px;
+        height: 260px;
+        margin: 1%;
+    }
+    .picture-1_text {
+        font-size: 30px;
+    }
+    .picture-3 {
+        display: none;
+    }
+    .states__container_info-button {
+        width: 180px;
+        height: 50px;
+        
+        .info-button_text {
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .picture-1,
+    .picture-2 {
+        width: 220px;
+        height: 250px;
+    }
+    .states__container_cards-item {
+        width: 320px;
+        height: 300px;
+    }
+    .cards-item_general--img {
+        width: 40px;
+        height: 40px;
+        margin: 10% 5% 0 5%;
+    }
+    .cards-item_general--line {
+        height: 40px;
+    }
+    .cards-item_text-container--info {
+        width: 100%;
+        margin-left: 5%;
+        font-size: 14px;
+    }
+    .cards-item_general--title {
+        margin: 0 0 0 3%;
+        font-size: 15px;
+    }
+}
+@media (max-width: 1100px) {
+    .states__container-PI {
+        margin-bottom: 0;
+    }
+    .states__container_pictures {
+        display: none;
+    }
+    .states__container_cards-item:nth-child(3) {
+        display: none;
+    }
+    .states__container_info-text--bold,
+    .states__container_info-text--regular {
+        margin: 0 0 5% 0;
+    }
+    .states__container_info-button {
+        width: 100%;
+        margin-left: 0;
+
+        .info-button_text {
+            font-size: 18px;
+        }
+    }
+
+}

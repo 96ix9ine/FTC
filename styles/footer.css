@@ -125,3 +125,9 @@
 .phone {
     margin: 5% 0 10% 0;
 }
+
+@media (max-width: 1200px) {
+    .footer__container_block {
+        display: none;
+    }
+}

@@ -151,3 +151,61 @@
     font-style: normal;
     letter-spacing: 1px;
 }
+
+@media (max-width: 1500px) {
+    .start-div__container {
+        background-position-x: center;
+    }
+    .nav__container_list-item {
+        margin: 0 2% 0 2%;
+    }
+    .start-info__container p, 
+    .start-info__container button {
+        margin: 0 0 3% 5%;
+    }
+
+}
+@media (max-width: 1300px) {
+    .start-info_text--bold {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .nav__container a,
+    .nav__container span{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1200px) {
+    .start-button_text {
+        font-size: 30px;
+    }
+    .nav__container {
+        height: 7%;
+    }
+}
+@media (max-width: 980px) {
+    .nav__container a,
+    .nav__container span{
+        font-size: 14px;
+    }
+    .nav__container_list-item {
+        margin: 0 2% 0 2%;
+    }
+    .start-button_text {
+        font-size: 24px;
+    }
+    .start-info_text--bold {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .start-info_text--regular {
+        font-size: 18px;
+    }
+    .start-info__container_button-calc {
+        width: 240px;
+        height: 50px;
+    }
+    .button-calc_text {
+        font-size: 16px;
+    }
+}

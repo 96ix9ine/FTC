@@ -86,3 +86,92 @@
     margin-right: 7%;
     background-color: #0A51CB;
 }
+
+@media (max-width: 1600px) {
+    .states-slim__container {
+        width: 100%;
+    }
+    .states-slim__container_imgs {
+        grid-template-columns: none;
+        grid-template-rows: none;
+    }
+    .states-slim__container_imgs-img-1 {
+        width: 280px;
+        height: 300px;
+        margin-left: 6%;
+        grid-area: 1 / 2;
+    }
+    .states-slim__container_imgs-img-2 {
+        width: 280px;
+        height: 300px;
+        grid-area: 1 / 1;
+    }
+    .states-slim__container_imgs-img-3 {
+        width: 600px;
+        margin-top: 2%;
+    }
+    .states-slim__container_info {
+        width: 45%;
+    }
+}
+@media (max-width: 1400px) {
+    .states-slim__container {
+        justify-content: space-evenly;
+    }
+    .states-slim__container_imgs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .states-slim__container_imgs-img-1,
+    .states-slim__container_imgs-img-2 {
+        width: 220px;
+        height: 260px;
+        margin: 1%;
+    }
+    .states-slim__container_imgs-img-1--text {
+        font-size: 28px;
+    }
+    .states-slim__container_imgs-img-3 {
+        display: none;
+    }
+    .states-slim__container_info {
+        width: 50%;
+    }
+}
+@media (max-width: 1200px) {
+    .states-slim__container_info {
+        justify-content: space-evenly;
+    }
+    .states-slim__container_imgs-img-1,
+    .states-slim__container_imgs-img-2 {
+        width: 200px;
+        height: 250px;
+    }
+    .states-slim__container_imgs-img-1--text {
+        font-size: 24px;
+    }
+    .states-slim__container_info p, .states-slim__container_info h2, .states-slim__container_info button {
+        margin: 0;
+    }
+}
+@media (max-width: 1100px) {
+    .states-slim__container_imgs {
+        display: none;
+    }
+    .states-slim__container_info-button, .states-slim__container_info-button span {
+        width: 100%;
+        font-size: 20px;
+    }
+    .states-slim__container_info {
+        width: 68%;
+    }
+}
+@media (max-width: 1000px) {
+    .states-slim__container_info {
+        min-width: min-content;
+        max-width: -webkit-fill-available;
+    }
+}

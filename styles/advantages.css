@@ -134,3 +134,99 @@
     font-weight: 500;
     color: black;
 }
+
+@media (max-width: 1600px) {
+    .advantages__contaier-list_item {
+        grid-template-columns: 85px 15px 550px;
+        grid-template-rows: 25px 10px 90px;
+    }
+    .advantages__container-title--bold {
+        font-size: 36px;
+    }
+    .advantages__container-list p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1500px) {
+    .advantages__contaier-list_item {
+        grid-template-columns: 75px 15px 500px;
+        grid-template-rows: 20px 10px 80px;
+    }
+    .advantages__container-list_item--svg {
+        width: 65px;
+        height: 65px;
+    }
+}
+@media (max-width: 1400px) {
+    .advantages__container {
+        width: 100%;
+    }
+    .advantages__container-list p {
+        font-size: 14px;
+    }
+    .advantages__container-list-block {
+        width: auto;
+    }
+}
+@media (max-width: 1200px) {
+    .advantages__contaier-list_item {
+    grid-template-columns: 85px 15px 450px;
+    grid-template-rows: 25px 10px 90px;
+    }
+    .advantages__container-buttonts_button,
+    .advantages__container-buttonts_button-2 {
+        width: 200px;
+    }
+    .advantages__container-buttons_button--text {
+        font-size: 15px;
+    }
+    .advantages__container-buttons_button--text-2 {
+        font-size: 14px;
+    }
+
+}
+@media (max-width: 1100px) {
+    .advantages__container-list-block {
+        margin: 0 1% 0 1%;
+    }
+    .advantages__container-list p {
+        font-size: 13px;
+    }
+    .advantages__contaier-list_item {
+        grid-template-columns: 85px 15px 375px;
+        grid-template-rows: 25px 10px 80px;
+    }
+    .advantages__container-list p {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+@media (max-width: 980px) {
+    .advantages__container {
+        height: 100%;
+    }
+    .advantages__container-title {
+        height: 100%;
+    }
+    .advantages__container-title_text {
+        font-size: 14px;
+    }
+    .advantages__container-title--line {
+        width: 40px;
+    }
+    .advantages__container-title--bold {
+        font-size: 28px;
+    }
+    .advantages__container-list {
+        height: 100%;
+    }
+    .advantages__contaier-list_item {
+        grid-template-columns: 85px 15px 320px;
+        grid-template-rows: 25px 10px 80px;
+    }
+    .advantages__container-buttons {
+        height: 100%;
+    }
+}
